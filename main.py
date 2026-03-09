@@ -20,7 +20,9 @@ def add(a: float, b: float):
     Returns:
     - JSON object with the result
     """
-    return {"result": a + b}
+    return {"operation": "add",
+        "a": a,
+        "b": b,"result": a + b}
 
 #subtraction endpoint
 @app.get("/subtract/{a}/{b}",status_code=200)
