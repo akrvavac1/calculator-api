@@ -46,7 +46,7 @@ def subtract(a: float, b: float):
 @app.get("/multiply/{a}/{b}",status_code=200)
 def multiply(a: float, b: float):
     """ 
-     Multiplies two numbers together.
+     Multiplies two given numbers.
     
     Parameters:
     - a: First number
@@ -64,7 +64,7 @@ def multiply(a: float, b: float):
 @app.get("/divide/{a}/{b}",status_code=200)
 def divide(a: float, b: float):
     """
-    Divides two numbers together.
+    Divides two given numbers.
 
     Parameters:
     - a: First number
@@ -89,7 +89,7 @@ def divide(a: float, b: float):
 @app.get("/rectanglearea-endpoint1/{length}/{width}",status_code=200)
 def rectanglearea(length: float, width: float):
     """
-    Calculates the area of a rectangle.
+    Calculates the area of a rectangle by multiplying its length and width.
 
     Parameters:
     - Length: The length of the rectangle
@@ -139,7 +139,7 @@ def celsius_to_fahrenheit(celsius: float):
 @app.get("/compound-interest-endpoint-3/{principal}/{rate}/{time}",status_code=200)
 def compound_interest(principal: float, rate: float, time: float):
     """
-    Calculates compound interest over time.
+    Calculates compound interest over time given the principal, interest rate, and time.
 
     Parameters:
     - Principal: Initial amount of money
